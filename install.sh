@@ -6,7 +6,7 @@ sudo apt upgrade -y ;
 #install dependencies
 sudo apt install build-essential default-jdk libssl-dev exuberant-ctags -y && 
 sudo apt install ncurses-term ack-grep silversearcher-ag fontconfig -y &&
-sudo apt install imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl -y &&
+sudo apt install imagemagick libmagickwand-dev software-properties-common git curl -y &&
 
 #configuring fonts 
 sudo cp -r ./fonts/* /usr/local/share/fonts/ &&
