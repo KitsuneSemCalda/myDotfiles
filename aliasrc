@@ -1,5 +1,6 @@
 # System
 
+alias clear="tput reset"
 alias ls="exa --icons --color=always"
 alias df="duf"
 alias tree="exa --icons --color=always --tree"
