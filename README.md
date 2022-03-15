@@ -39,7 +39,7 @@ install.sh -> This application configure automatically the dotfiles from you pc.
 1. exa 
 2. bat 
 
-#### Languages Installed from asdf
+### Languages Installed from asdf
 
 1. Ruby
 2. Lua
@@ -47,6 +47,6 @@ install.sh -> This application configure automatically the dotfiles from you pc.
 4. golang 
 5. rust 
 
-##### Editor installed 
+### Editor installed 
 1. Neovim 
 2. Lunarvim 
