@@ -44,8 +44,8 @@ asdf plugin add rust ;
 asdf install rust 1.58.1 &&
 asdf global rust 1.58.1 &&
 
-cargo install bat exa ;
+cargo install bat exa duf fd;
 
 # install lunarvim
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) ; 
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y ; 
 source ~/.bashrc
