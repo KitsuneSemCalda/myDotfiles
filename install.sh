@@ -7,11 +7,14 @@ sudo apt upgrade -y ;
 sudo apt install build-essential default-jdk libssl-dev exuberant-ctags -y && 
 sudo apt install ncurses-term ack-grep silversearcher-ag fontconfig -y &&
 sudo apt install imagemagick libmagickwand-dev software-properties-common git curl -y &&
+sudo apt install python3 python3-pip python3-venv &&
+
 
 #configuring fonts 
 sudo cp -r ./fonts/* /usr/local/share/fonts/ &&
 fc-cache -fv &&
 
+# configuring /home 
 mkdir ~/Projetos/ &&
 touch ~/.aliasrc &&
 cp ./aliasrc ~/.aliasrc &&
@@ -44,8 +47,15 @@ asdf plugin add rust ;
 asdf install rust 1.58.1 &&
 asdf global rust 1.58.1 &&
 
+asdf plugin install python;
+asdf install python 3.10.2 &&
+asdf global python 3.10.2 &&
+
+# install program writed with rust
+
 cargo install bat exa duf fd;
 
 # install lunarvim
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y ; 
-source ~/.bashrc
+source ~/.bashrc &&
+
