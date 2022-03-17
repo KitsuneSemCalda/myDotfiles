@@ -17,22 +17,7 @@ fonts/ -> This directory contain the fonts fira-code (the best font) with nerdfo
 ## The application
 
 install.sh -> This application configure automatically the dotfiles from you pc.
-
-### Programs Installed from apt 
-
-1. build-essential 
-2. default-jdk 
-3. libssl-dev 
-4. exuberant-ctags 
-5. ncurses-term 
-6. ack-grep 
-7. silversearcher-ag 
-8. fontconfig 
-9. imagemagick 
-10. libmagickwand-dev 
-11. software-properties-common 
-12. git 
-13. curl
+asdf-reload -> This application reconfigure automatically the .tool-version global after deleted.
 
 ### Programs Installed from cargo
 
