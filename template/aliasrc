@@ -1,0 +1,17 @@
+# System
+alias clear="tput reset"
+alias ls="exa --icons --color=always"
+alias df="duf"
+alias tree="exa --icons --color=always --tree"
+alias find="fd"
+alias cat="bat -p"
+alias vim="lvim"
+
+# Projetos
+alias rbpro="touch project.rb && chmod +x project.rb && echo '#!/bin/env ruby' >> project.rb"
+alias pypro="touch project.py && chmod +x project.py && echo '#!/bin/env python3' >> project.py"
+alias luapro="touch project.lua && chmod +x project.lua && echo '#!/bin/env lua' >> project.lua"
+alias nodepro="touch project.js && chmod +x project.js && echo '#!/bin/env node' >> project.js"
+alias shpro="touch project.sh && chmod +x project.sh && echo '#!/bin/env bash' >> project.sh"
+# Directory
+alias projeto="cd ~/Projetos/"

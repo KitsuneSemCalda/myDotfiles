@@ -1,0 +1,12 @@
+# ---------------- Exports -------------------
+export PS1="\\$ \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/ ') \W >\[$(tput sgr0)\]"
+export PATH="${PATH}:${HOME}/.cargo/bin"
+export MANPAGER="less"
+export EDITOR="lvim"
+# ---------------- Source --------------------
+source ~/.aliasrc
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash
+exec /usr/bin/asdf-reload
+# --------------- Config ---------------------
+stty ixon
