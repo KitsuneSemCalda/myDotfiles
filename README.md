@@ -12,7 +12,10 @@ aliasrc -> A list of alias from daily using.
 
 ## The directory
 
-fonts/ -> This directory contain the fonts fira-code (the best font) with nerdfonts to icons.
+assets/fonts/ -> This directory contain the fonts fira-code (the best font) with nerdfonts to icons.
+templates/ -> This directory contain the bashrc and aliasrc based
+
+src/ -> This directory contain the application asdf-reload
 
 ## The application
 
