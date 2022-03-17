@@ -1,0 +1,9 @@
+#!/bin/env bash 
+
+asdf global rust 1.58.1 &&
+asdf global python 3.10.2 &&
+asdf global ruby 3.1.1 &&
+asdf global golang 1.17.7 &&
+asdf global nodejs 17.5.0 &&
+asdf global lua 5.4.4 &&
+printf "\n ASDF Recarregado com sucesso \n"
