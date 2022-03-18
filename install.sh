@@ -25,12 +25,12 @@ printf "Asdf-reload instalado \n"
 clear &&
 source ~/.bashrc &&
 # -------------------------- Install Asdf Languages ------------------------------------------------
-asdf plugin add python ;
-asdf plugin add golang ;
-asdf plugin add ruby ;
-asdf plugin add rust ;
-asdf plugin add lua ;
-asdf plugin add nodejs ;
+asdf plugin-add python ;
+asdf plugin-add golang ;
+asdf plugin-add ruby ;
+asdf plugin-add rust ;
+asdf plugin-add lua ;
+asdf plugin-add nodejs ;
 
 asdf install python 3.10.2 &&
 asdf install golang 1.17.7 &&
