@@ -7,6 +7,5 @@ export EDITOR="lvim"
 source ~/.aliasrc
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
-exec /usr/bin/asdf-reload
 # --------------- Config ---------------------
 stty ixon
