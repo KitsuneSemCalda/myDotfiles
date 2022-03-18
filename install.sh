@@ -4,7 +4,7 @@
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
 printf "Asdf Instalado com Sucesso \n" &&
 #----------------------------- Configuring fonts ---------------------------------------------------
-sudo cp -r ./assets/fonts/* /usr/local/share/fonts/ &&
+sudo cp -r ./assets/fonts/* /usr/local/share/fonts/. &&
 fc-cache -fv &&
 printf "Fonts FiraCode com NerdFonts instalados com sucesso \n" && 
 #---------------------------- Configuring Bashrc template ------------------------------------------
@@ -20,7 +20,7 @@ printf "Lunarvim instalado com sucesso \n"
 cargo install bat exa &&
 printf "Ferramentas em rust instaladas com sucesso \n"
 # ----------------------- Criando aplicação asdf-reload --------------------------------------------
-sudo cp ./src/asdf-reload /usr/bin/ &&
+sudo cp ./src/asdf-reload /usr/bin/. &&
 printf "Asdf-reload instalado \n"
 # ----------------------- Reload bashrc ------------------------------------------------------------
 clear &&
