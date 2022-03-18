@@ -4,8 +4,10 @@
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
 printf "Asdf Instalado com Sucesso \n" &&
 #----------------------------- Configuring fonts ---------------------------------------------------
+sudo mkdir /usr/share/fonts/
 sudo cp -r ./assets/fonts/* /usr/local/share/fonts/. &&
 fc-cache -fv &&
+ln -sf /usr/local/share/fonts/ ~/.fonts
 printf "Fonts FiraCode com NerdFonts instalados com sucesso \n" && 
 #---------------------------- Configuring Bashrc template ------------------------------------------
 cat /dev/null > ~/.bashrc &&
