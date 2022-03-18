@@ -13,6 +13,18 @@ cp ./template/bashrc ~/.bashrc &&
 touch ~/.aliasrc &&
 cp ./template/aliasrc ~/.aliasrc &&
 printf "Templates for bashrc and aliasrc configurados com sucesso \n" &&
+# ----------------------- Install Lunarvim ---------------------------------------------------------
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y &&
+printf "Lunarvim instalado com sucesso \n"
+# ----------------------- Install Rust Tools -------------------------------------------------------
+cargo install bat exa &&
+printf "Ferramentas em rust instaladas com sucesso \n"
+# ----------------------- Criando aplicação asdf-reload --------------------------------------------
+sudo cp ./src/asdf-reload /usr/bin/ &&
+printf "Asdf-reload instalado \n"
+# ----------------------- Reload bashrc ------------------------------------------------------------
+clear &&
+source ~/.bashrc &&
 # -------------------------- Install Asdf Languages ------------------------------------------------
 asdf plugin add python ;
 asdf plugin add golang ;
@@ -37,15 +49,3 @@ asdf global nodejs 17.5.0 &&
 
 printf "Linguagens instaladas com sucesso \n" &&
 
-# ----------------------- Install Lunarvim ---------------------------------------------------------
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y &&
-printf "Lunarvim instalado com sucesso \n"
-# ----------------------- Install Rust Tools -------------------------------------------------------
-cargo install bat exa &&
-printf "Ferramentas em rust instaladas com sucesso \n"
-# ----------------------- Criando aplicação asdf-reload --------------------------------------------
-sudo cp ./src/asdf-reload /usr/bin/ &&
-printf "Asdf-reload instalado \n"
-# ----------------------- Reload bashrc ------------------------------------------------------------
-clear &&
-source ~/.bashrc
