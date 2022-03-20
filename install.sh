@@ -1,29 +1,30 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 #----------------------------- Install Asdf --------------------------------------------------------
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
-printf "Asdf Instalado com Sucesso \n" &&
+printf '%b'"\t\e[32;1m Asdf Instalado com Sucesso \n\e[m" &&
 #----------------------------- Configuring fonts ---------------------------------------------------
 sudo mkdir /usr/share/fonts/
 sudo cp -r ./assets/fonts/* /usr/local/share/fonts/. &&
-fc-cache -fv &&
+fc-cache -f &&
 ln -sf /usr/local/share/fonts/ ~/.fonts
-printf "Fonts FiraCode com NerdFonts instalados com sucesso \n" && 
+printf '%b'"\t\e[32;1mFonts FiraCode com NerdFonts instalados com sucesso \n\e[m" && 
 #---------------------------- Configuring Bashrc template ------------------------------------------
 cat /dev/null > ~/.bashrc &&
 cp ./template/bashrc ~/.bashrc &&
 touch ~/.aliasrc &&
 cp ./template/aliasrc ~/.aliasrc &&
-printf "Templates for bashrc and aliasrc configurados com sucesso \n" &&
+printf '%b'"\t\e[32;1mTemplates for bashrc and aliasrc configurados com sucesso \n\e[m" &&
 # ----------------------- Install Lunarvim ---------------------------------------------------------
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y &&
-printf "Lunarvim instalado com sucesso \n"
+clear &&
+printf '%b'"\t\e[32;1mLunarvim instalado com sucesso \n\e[m"
 # ----------------------- Criando aplicação asdf-reload --------------------------------------------
 sudo cp ./src/asdf-reload /usr/bin/. &&
-printf "Asdf-reload instalado \n"
+printf '%b'"\t\e[32;1mAsdf-reload instalado \n\e[m"
 # ----------------------- Reload bashrc ------------------------------------------------------------
 clear &&
-source ~/.bashrc &&
+. ~/.bashrc &&
 # -------------------------- Install Asdf Languages ------------------------------------------------
 asdf plugin-add python ;
 asdf plugin-add golang ;
@@ -46,9 +47,10 @@ asdf global rust 1.58.1 &&
 asdf global lua 5.4.4 &&
 asdf global nodejs 17.5.0 &&
 
-printf "Linguagens instaladas com sucesso \n" &&
-
+printf '%b'"\t\e[32;1mLinguagens instaladas com sucesso \n\e[m" &&
 # ----------------------- Install Rust Tools -------------------------------------------------------
 cargo install bat exa &&
-printf "Ferramentas em rust instaladas com sucesso \n"
-
+printf '%b'"\t\e[32;1mFerramentas em rust instaladas com sucesso \n\e[m" &&
+# ----------------------- Agradecimento ------------------------------------------------------------
+. /etc/os-release
+printf "\nFico feliz pelo uso do myDotfiles, agradecimentos a $USER por instalar em $NAME $VERSION\n"
