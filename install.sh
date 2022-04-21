@@ -33,23 +33,23 @@ asdf plugin-add rust ;
 asdf plugin-add lua ;
 asdf plugin-add nodejs ;
 
-asdf install python 3.10.2 &&
-asdf install golang 1.17.7 &&
-asdf install ruby 3.1.1 &&
-asdf install rust 1.58.1 &&
-asdf install lua 5.4.4 &&
-asdf install nodejs 17.5.0 &&
+asdf install python latest &&
+asdf install golang latest &&
+asdf install ruby latest &&
+asdf install rust latest &&
+asdf install lua latest &&
+asdf install nodejs latest &&
 
-asdf global python 3.10.2 &&
-asdf global golang 1.17.7 &&
-asdf global ruby 3.1.1 &&
-asdf global rust 1.58.1 &&
-asdf global lua 5.4.4 &&
-asdf global nodejs 17.5.0 &&
+asdf global python latest &&
+asdf global golang latest &&
+asdf global ruby latest &&
+asdf global rust latest &&
+asdf global lua latest &&
+asdf global nodejs latest &&
 
 printf '%b'"\t\e[32;1mLinguagens instaladas com sucesso \n\e[m" &&
 # ----------------------- Install Rust Tools -------------------------------------------------------
-cargo install bat exa &&
+cargo install bat exa duf &&
 printf '%b'"\t\e[32;1mFerramentas em rust instaladas com sucesso \n\e[m" &&
 # ----------------------- Agradecimento ------------------------------------------------------------
 . /etc/os-release
