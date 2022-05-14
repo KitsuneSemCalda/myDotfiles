@@ -6,7 +6,7 @@ alias tree="exa --icons --color=always --tree"
 alias find="fd"
 alias cat="bat -p"
 alias vim="lvim"
-
+alias update="apt update && apt upgrade -y; apt dist-upgrade"
 # Projetos
 alias rbpro="touch project.rb && chmod +x project.rb && echo '#!/usr/bin/env ruby' >> project.rb"
 alias pypro="touch project.py && chmod +x project.py && echo '#!/usr/bin/env python3' >> project.py"
