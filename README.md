@@ -2,7 +2,7 @@
 
 Welcome to my computer.
 
-Here am show my dotfile 
+Here am show my dotfile
 
 ## The archives
 
@@ -26,17 +26,8 @@ asdf-reload -> This application reconfigure automatically the .tool-version glob
 
 ### Programs Installed from cargo
 
-1. exa 
-2. bat 
+1. exa
+2. bat
 
-### Languages Installed from asdf
-
-1. Ruby
-2. Lua
-3. nodejs
-4. golang 
-5. rust 
-
-### Editor installed 
-1. Neovim 
-2. Lunarvim 
+### Editor installed
+1. Neovim
