@@ -195,5 +195,3 @@ autosave.setup(
 )
 EOF
 
-" AutoCMD commands
-autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
