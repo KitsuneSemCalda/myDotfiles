@@ -12,6 +12,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 cp ./template/init.vim ~/.config/nvim/init.vim ;
 
+nvim -c ":PlugInstall"
 #configure the fonts
 
 ln -sf /usr/local/fonts ~/.fonts;
@@ -22,6 +23,5 @@ cp -r ./assets/fonts/* ~/.fonts;
 mkdir ~/Documentos/Projetos
 
 # Finalização
-exec $SHELL
 . /etc/os-release
 printf "\t Agradecimentos para $USER por instalar esses dotfiles em $NAME $VERSION\n"
