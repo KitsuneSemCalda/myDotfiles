@@ -1,9 +1,0 @@
-#!/bin/env bash 
-
-asdf global rust latest &&
-asdf global python latest &&
-asdf global ruby latest &&
-asdf global golang latest &&
-asdf global nodejs latest &&
-asdf global lua latest &&
-printf "\n ASDF Recarregado com sucesso \n"

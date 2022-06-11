@@ -1,0 +1,10 @@
+# ---------------- Exports -------------------
+export PS1="\\$ \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/ ') \W > \[$(tput sgr0)\]"
+export PATH="${PATH}:${HOME}/.cargo/bin"
+export EDITOR="nvim"
+# ---------------- Source --------------------
+. ~/.aliasrc
+# --------------- Config ---------------------
+stty ixon
+# --------------- Init -----------------------
+tput reset
