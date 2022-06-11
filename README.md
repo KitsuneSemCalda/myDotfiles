@@ -6,26 +6,18 @@ Here am show my dotfile
 
 ## The archives
 
+# template 1.0
+
 bashrc -> My modified configuration from gnu/bash.
 
 aliasrc -> A list of alias from daily using.
 
-init.vim -> A config files of my neovim contain mapping,plugins autoinstalled and more
+init.vim -> A config files of my neovim contain mapping,plugins and more.
 
-## The directory
+# template 2.0
 
-assets/fonts/ -> This directory contain the fonts fira-code (the best font) with nerdfonts to icons.
+bashrc -> My modified configuration from gnu/bash.
 
-templates/ -> This directory contain the bashrc and aliasrc based
+aliasrc -> A list of aliás to my daily using.
 
-src/ -> This directory contain the application asdf-reload
-
-## The application
-
-install.sh -> This application configure automatically the dotfiles from you pc.
-
-asdf-reload -> This application reconfigure automatically the .tool-version global after deleted.
-
-### Editor installed
-
-1. Neovim
+nvim/ -> The Neovim folder with luas configuration
