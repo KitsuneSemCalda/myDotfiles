@@ -1,7 +1,7 @@
 # System
 alias clear="tput reset"
 alias vim="nvim"
-alias configvim="nvim ~/.config/nvim/init.vim"
+alias configvim="nvim ~/.config/nvim/"
 alias configalias="nvim ~/.aliasrc"
 alias configbash="nvim ~/.bashrc"
 
@@ -12,5 +12,3 @@ alias cppcompile="g++ -Wall -Wconversion --verbose $1"
 alias projeto="cd ~/Documentos/Software/Projetos/"
 alias scheduling="cd ~/Documentos/Software/Scheduling/"
 
-# Games
-alias multimc="~/Downloads/Games/UltimMC/UltimMC &"
